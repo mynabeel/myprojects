@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <title> JSON Course</title>
+</head>
+ 
+<body>
+  <div class="message"></div>
+  <script>
+    const message = document.querySelector('.message');
+    message.textContent = "Hello";
+    const myObj = {
+      "name": "value"
+      , "last": "Svekis"
+    };
+    console.log(myObj);
+    message.textContent = myObj.name;
+    message.textContent = myObj["last"];
+    myObj["first Name"] = "Laurence";
+    console.log(myObj);
+    myObj.firstName = "John";
+  </script>
+</body>
+ 
+</html>
